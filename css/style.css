@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 body {
     background-color: #1A1A1D;
     color: white;
@@ -174,7 +175,6 @@ h2 {
     padding: 30px;
     border-radius: 12px;
     border-left: 5px solid #A44F74;
-    /* De sticky regels zijn verwijderd om de aside vast te maken */
 }
 .sidebar-nav h3 {
     color: #A44F74;
