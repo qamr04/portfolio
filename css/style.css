@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 * {
@@ -227,6 +226,104 @@ h2 {
     font-weight: 500;
 }
 
+/* ASIDE STYLING */
+aside {
+    background: linear-gradient(135deg, #243552 0%, #2a3f5f 100%);
+    padding: 25px;
+    border-radius: 12px;
+    margin: 30px 0;
+    border-left: 4px solid #A44F74;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+aside h3 {
+    color: #A44F74;
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+aside h2 {
+    color: #A44F74;
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+aside p {
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.project-sidebar {
+    background: linear-gradient(135deg, #1E2D4D 0%, #243552 100%);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    border-left: 5px solid #A44F74;
+}
+
+.project-sidebar h3 {
+    margin-top: 20px;
+}
+
+.project-sidebar h3:first-child {
+    margin-top: 0;
+}
+
+.project-note {
+    background: rgba(164, 79, 116, 0.15);
+    border-left: 4px solid #A44F74;
+    padding: 20px;
+    margin: 25px 0;
+}
+
+.project-stats {
+    background: linear-gradient(135deg, #1E2D4D 0%, #1A1A1D 100%);
+    padding: 25px;
+    border-radius: 10px;
+    border: 2px solid #A44F74;
+}
+
+.project-stats ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(164, 79, 116, 0.2);
+}
+
+.project-stats ul li:last-child {
+    border-bottom: none;
+}
+
+.project-links {
+    background: linear-gradient(135deg, #243552 0%, #1E2D4D 100%);
+    margin-top: 40px;
+}
+
+.project-links a {
+    color: #A44F74;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    font-weight: 500;
+    transition: transform 0.2s;
+}
+
+.project-links a:hover {
+    transform: translateX(10px);
+    color: white;
+}
+
+.implementation-list li, .challenge-list li {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+/* CONTACT PAGE STYLING */
 .contact-section {
     background-color: #1A1A1D;
     min-height: 100vh;
@@ -234,8 +331,107 @@ h2 {
 
 .contact-section h1 {
     font-size: 48px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     text-align: center;
+}
+
+.contact-intro {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #ccc;
+}
+
+.contact-info-box {
+    background: linear-gradient(135deg, #1E2D4D 0%, #243552 100%);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    border-left: 6px solid #A44F74;
+}
+
+.contact-info-box ul li {
+    padding: 12px 0;
+    font-size: 16px;
+}
+
+.contact-method-card {
+    background: linear-gradient(135deg, #1E2D4D 0%, #243552 100%);
+    padding: 30px;
+    border-radius: 12px;
+    height: 100%;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.contact-method-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(164, 79, 116, 0.4);
+}
+
+.contact-method-card h3 {
+    color: #A44F74;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-method-card p {
+    margin-bottom: 10px;
+}
+
+.contact-method-card a {
+    color: #A44F74;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.contact-method-card a:hover {
+    color: white;
+}
+
+.response-time {
+    font-size: 14px;
+    color: #999;
+    margin-top: 10px;
+}
+
+.availability-box {
+    background: linear-gradient(135deg, #243552 0%, #2a3f5f 100%);
+    padding: 30px;
+    border-radius: 12px;
+    margin: 40px 0;
+    border-left: 5px solid #A44F74;
+}
+
+.availability-box ul li {
+    padding: 8px 0;
+    font-size: 16px;
+}
+
+.contact-form-section {
+    background: linear-gradient(135deg, #1E2D4D 0%, #243552 100%);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.contact-form-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.fun-fact-box {
+    background: rgba(164, 79, 116, 0.15);
+    border: 2px dashed #A44F74;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.fun-fact-box h3 {
+    margin-bottom: 15px;
 }
 
 .form-label {
@@ -284,5 +480,22 @@ footer {
     
     .skill-card {
         min-height: 140px;
+    }
+
+    aside {
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    .project-sidebar {
+        padding: 20px;
+    }
+
+    .contact-info-box {
+        padding: 20px;
+    }
+
+    .availability-box {
+        padding: 20px;
     }
 }
