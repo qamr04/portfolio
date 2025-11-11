@@ -1,11 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ayman Bouhallil - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    dingus wingus bingus hingus
+    <header class="sticky-top">
+        <nav class="container-fluid">
+            <ul class="row align-items-center list-unstyled m-0">
+                <li class="col-6 col-md-3">
+                    <a href="index.html">
+                        <img src="logo.png" alt="AB Logo">
+                    </a>
+                </li>
+                <li class="col-6 col-md-9 text-end">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="portfolio.html">Projects</a>
+                    <a href="contact.html">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <article class="container">
+                <ul class="row align-items-center list-unstyled">
+                    <li class="col-md-7">
+                        <h1>Hallo, ik ben <span>Ayman Bouhallil</span></h1>
+                        <p class="lead">Student Systeem- en Netwerkbeheer</p>
+                        <p>Met een passie voor cybersecurity en programmeren. Ik werk graag met Linux, Cisco en Python, en bouw praktijkprojecten zoals een honeypot in AWS en een keylogger.</p>
+                        <p>Mijn doel is om door te groeien tot een veelzijdige IT-professional die techniek en beveiliging combineert.</p>
+                        <a href="portfolio.html" class="btn btn-primary mt-3">Bekijk mijn werk</a>
+                    </li>
+                    <li class="col-md-5 text-center mt-4 mt-md-0">
+                        <img src="profile.jpg" alt="Ayman Bouhallil" class="profile-img">
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="skills">
+            <article class="container">
+                <h2>Mijn Skills</h2>
+                <ul class="row list-unstyled">
+                    <li class="col-md-3 col-6">
+                        <article class="skill-card">
+                            <h3>Linux</h3>
+                            <p>Server beheer & scripting</p>
+                        </article>
+                    </li>
+                    <li class="col-md-3 col-6">
+                        <article class="skill-card">
+                            <h3>Python</h3>
+                            <p>Automation & security</p>
+                        </article>
+                    </li>
+                    <li class="col-md-3 col-6">
+                        <article class="skill-card">
+                            <h3>Cisco</h3>
+                            <p>Netwerk configuratie</p>
+                        </article>
+                    </li>
+                    <li class="col-md-3 col-6">
+                        <article class="skill-card">
+                            <h3>AWS</h3>
+                            <p>Cloud infrastructure</p>
+                        </article>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ayman Bouhallil</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
