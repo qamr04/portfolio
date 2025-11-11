@@ -1,77 +1,161 @@
 <!DOCTYPE html>
-<html lang="BE-nl">
+<html lang="nl-BE">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project details honeypot</title>
-</head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>AWS Honeypot</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
+    </script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
-<body>
-    <header class="sticky-top">
-        <nav class="container-fluid">
-            <ul class="row align-items-center list-unstyled m-0">
-                <li class="col-6 col-md-3">
-                    <a href="index.html">
-                        <img src="assets/logo/logo.png" alt="AB Logo">
-                    </a>
-                </li>
-                <li class="col-6 col-md-9 text-end">
-                    <a href="index.html">Home</a>
-                    <a href="portofolio.html" class="active">Projects</a>
-                    <a href="contact.html">Contacts</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+</head>
 
-    <main>
-        <section class="project-detail">
-            <article class="container">
-                <a href="portofolio.html" class="btn btn-secondary mb-4">â† Terug naar projects</a>
-                <ul class="row list-unstyled">
-                    <li class="col-lg-9">
-                        <h1>AWS Honeypot Project</h1>
-                        <article class="project-content">
-                            <h2>Over dit project</h2>
-                            <p>Dit project omvat het opzetten van een complete honeypot infrastructuur in Amazon Web Services (AWS). Het doel was om cyberaanvallen te detecteren, analyseren en te leren van de tactieken die aanvallers gebruiken.</p>
-                            
-                            <h2>Technologieën</h2>
-                            <ul class="tech-list">
-                                <li>AWS EC2</li>
-                                <li>CloudWatch</li>
-                                <li>Python</li>
-                                <li>Linux</li>
-                            </ul>
-                            
-                            <h2>Resultaten</h2>
-                            <p>Het systeem heeft succesvol verschillende aanvalspatronen gedetecteerd en gedocumenteerd. Door de data-analyse heb ik inzicht gekregen in veelvoorkomende aanvalsvectoren en beveiligingslekken.</p>
-                        </article>
+<body>
+    <nav class="navbar navbar-expand-md bg-light sticky-top">
+        <article class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo/logo.png" alt="AB Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <section class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
                     </li>
-                    <li class="col-lg-3 d-none d-lg-block">
-                        <aside class="sidebar-nav">
-                            <h3>Navigatie</h3>
-                            <ul class="list-unstyled">
-                            <li><a href="index.html">Home</a></li>
-                                <li><a href="portofolio.html">Projects</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </aside>
+                    <li class="nav-item">
+                        <a href="portofolio.html" class="nav-link active" aria-current="page">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
                     </li>
                 </ul>
-            </article>
-        </section>
+            </section>
+        </article>
+    </nav>
+
+    <header class="py-5 bg-light">
+        <article class="container">
+            <h1 class="display-4 text-center">AWS Honeypot Project</h1>
+        </article>
+    </header>
+
+    <main class="container my-5">
+        <a href="portofolio.html" class="btn btn-secondary mb-4">
+            <i class="bi bi-arrow-left me-2"></i>Terug naar projects
+        </a>
+        
+        <ul class="row list-unstyled">
+            <li class="col-lg-9">
+                <article class="project-content">
+                    <section class="mb-5">
+                        <h2 class="text-uppercase fs-5 fw-bolder mb-3">Over dit project</h2>
+                        <p>Dit project omvat het opzetten van een complete honeypot infrastructuur in Amazon Web Services (AWS). Het doel was om cyberaanvallen te detecteren, analyseren en te leren van de tactieken die aanvallers gebruiken.</p>
+                        <p>Een honeypot is een beveiligingsmechanisme dat opzettelijk kwetsbaar wordt gemaakt om aanvallers aan te trekken en hun activiteiten te monitoren. Door dit systeem in de cloud te implementeren, kon ik realistische aanvalsscenario's observeren en documenteren.</p>
+                    </section>
+                    
+                    <section class="mb-5">
+                        <h2 class="text-uppercase fs-5 fw-bolder mb-3">Technologieën</h2>
+                        <ul class="row g-3 list-unstyled">
+                            <li class="col-sm-6 col-md-3">
+                                <article class="tech-item border rounded p-3 text-center">
+                                    <i class="bi bi-cloud fs-3 text-primary mb-2"></i>
+                                    <p class="small fw-bold mb-0">AWS EC2</p>
+                                </article>
+                            </li>
+                            <li class="col-sm-6 col-md-3">
+                                <article class="tech-item border rounded p-3 text-center">
+                                    <i class="bi bi-graph-up fs-3 text-primary mb-2"></i>
+                                    <p class="small fw-bold mb-0">CloudWatch</p>
+                                </article>
+                            </li>
+                            <li class="col-sm-6 col-md-3">
+                                <article class="tech-item border rounded p-3 text-center">
+                                    <i class="bi bi-file-code fs-3 text-primary mb-2"></i>
+                                    <p class="small fw-bold mb-0">Python</p>
+                                </article>
+                            </li>
+                            <li class="col-sm-6 col-md-3">
+                                <article class="tech-item border rounded p-3 text-center">
+                                    <i class="bi bi-ubuntu fs-3 text-primary mb-2"></i>
+                                    <p class="small fw-bold mb-0">Linux</p>
+                                </article>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <section class="mb-5">
+                        <h2 class="text-uppercase fs-5 fw-bolder mb-3">Implementatie</h2>
+                        <p>De honeypot werd geïmplementeerd met de volgende componenten:</p>
+                        <ul>
+                            <li><strong>EC2 Instance:</strong> Ubuntu server met opzettelijk kwetsbare diensten</li>
+                            <li><strong>Security Groups:</strong> Specifieke firewall regels om traffic te controleren</li>
+                            <li><strong>CloudWatch Logging:</strong> Realtime monitoring van alle activiteiten</li>
+                            <li><strong>Python Scripts:</strong> Automatische analyse van aanvalspatronen</li>
+                        </ul>
+                    </section>
+                    
+                    <section>
+                        <h2 class="text-uppercase fs-5 fw-bolder mb-3">Resultaten</h2>
+                        <p>Het systeem heeft succesvol verschillende aanvalspatronen gedetecteerd en gedocumenteerd. Door de data-analyse heb ik inzicht gekregen in veelvoorkomende aanvalsvectoren en beveiligingslekken.</p>
+                        <p>Belangrijkste bevindingen:</p>
+                        <ul>
+                            <li>Gemiddeld 50+ aanvalspogingen per dag</li>
+                            <li>Meest voorkomende aanvallen: SSH brute-force attacks</li>
+                            <li>Geografische spreiding van aanvallers wereldwijd</li>
+                            <li>Identificatie van automatische bot-netwerken</li>
+                        </ul>
+                    </section>
+                </article>
+            </li>
+
+            <li class="col-lg-3 mt-5 mt-lg-0">
+                <aside>
+                    <h2 class="text-uppercase fs-5 fw-bolder">Navigatie</h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="portofolio.html" class="text-decoration-none">Projects</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-decoration-none">Contact</a></li>
+                    </ul>
+                    
+                    <h2 class="text-uppercase fs-5 fw-bolder mt-4">Project Info</h2>
+                    <p class="small mb-2"><strong>Datum:</strong> November 2024</p>
+                    <p class="small mb-2"><strong>Status:</strong> Afgerond</p>
+                    <p class="small"><strong>Type:</strong> Cybersecurity</p>
+                    
+                    <h2 class="text-uppercase fs-5 fw-bolder mt-4">Delen</h2>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/ayman-bouhallil-1199a9364/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <i class="bi bi-linkedin fs-4"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/qamr04" target="_blank" rel="noopener" aria-label="GitHub">
+                                <i class="bi bi-github fs-4"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+            </li>
+        </ul>
     </main>
 
-    <footer class="d-flex justify-content-between align-items-center">
-        <p class="m-0">&copy; 2025 Ayman Bouhallil</p>
-        <p class="m-0">
-            <a href="https://www.linkedin.com/in/ayman-bouhallil-1199a9364/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/qamr04" target="_blank">GitHub</a>
-        </p>
+    <footer class="bg-light text-center py-3 mt-5">
+        <article class="container">
+            <p class="mb-2">&copy; 2025 Ayman Bouhallil</p>
+            <p class="mb-0">
+                <a href="https://www.linkedin.com/in/ayman-bouhallil-1199a9364/" target="_blank" rel="noopener" class="text-decoration-none me-3">LinkedIn</a>
+                <a href="https://github.com/qamr04" target="_blank" rel="noopener" class="text-decoration-none">GitHub</a>
+            </p>
+        </article>
     </footer>
-
 </body>
 </html>
