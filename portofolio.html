@@ -1,145 +1,114 @@
 <!DOCTYPE html>
-<html lang="nl-BE">
+<html lang="BE-nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projecten</title>
+<<<<<<< HEAD
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"
         defer></script>
+=======
+</head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+>>>>>>> parent of c69ddf0 (hopelijk de laatste aanpassing 3)
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-</head>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
 <body>
-    <nav class="navbar navbar-expand-md bg-light sticky-top">
-        <article class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/logo/logo.png" alt="AB Logo" height="50">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <section class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="portofolio.html" class="nav-link active" aria-current="page">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </section>
-        </article>
-    </nav>
-
-    <header class="py-5 bg-light">
-        <article class="container">
-            <h1 class="display-4 text-center">Mijn Projects</h1>
-        </article>
+    <header class="sticky-top">
+        <nav class="container-fluid">
+            <ul class="row align-items-center list-unstyled m-0">
+                <li class="col-6 col-md-3">
+                    <a href="index.html">
+                        <img src="assets/logo/logo.png" alt="AB Logo">
+                    </a>
+                </li>
+                <li class="col-6 col-md-9 text-end">
+                    <a href="index.html">Home</a>
+                    <a href="portofolio.html" class="active">Projects</a>
+                    <a href="contact.html">Contacts</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="container my-5">
-        <ul class="row list-unstyled">
-            <li class="col-lg-9">
-                <article class="mb-4">
-                    <p>Hier vind je een overzicht van mijn belangrijkste projecten op het gebied van cybersecurity, netwerkbeheer en programmeren. Elk project toont mijn technische vaardigheden en passie voor IT-beveiliging.</p>
-                </article>
-                <hr class="mb-4">
-
-                <ul class="row g-4 list-unstyled">
-                    <li class="col-md-6">
-                        <article class="project-card border rounded p-4 h-100">
-                            <h2 class="text-uppercase fs-6 fw-bolder">AWS Honeypot</h2>
-                            <p class="small">Een honeypot systeem opgezet in AWS om cyberaanvallen te detecteren en analyseren. Gebruikt EC2 instances en CloudWatch voor monitoring.</p>
-                            <a href="project-item.html" class="btn btn-primary btn-sm" rel="noopener">Meer info</a>
-                        </article>
+    <main>
+        <section class="projects-section">
+            <article class="container">
+                <h1>Mijn Projects</h1>
+                <ul class="row list-unstyled">
+                    <li class="col-lg-9">
+                        <ul class="row list-unstyled">
+                            <li class="col-md-6 mb-4">
+                                <article class="project-card">
+                                    <h3>AWS Honeypot</h3>
+                                    <p>Een honeypot systeem opgezet in AWS om cyberaanvallen te detecteren en analyseren. Gebruikt EC2 instances en CloudWatch voor monitoring.</p>
+                                    <a href="project-item.html" class="btn btn-primary">Meer info</a>
+                                </article>
+                            </li>
+                            <li class="col-md-6 mb-4">
+                                <article class="project-card">
+                                    <h3>Python Keylogger</h3>
+                                    <p>Educatief project om keylogging technieken te begrijpen. Ontwikkeld in Python voor security awareness training.</p>
+                                    <a href="" class='btn btn-primary'>Meer info</a>
+                                </article>
+                            </li>
+                            <li class="col-md-6 mb-4">
+                                <article class="project-card">
+                                    <h3>Cisco Netwerk</h3>
+                                    <p>Complete netwerk infrastructuur met Cisco routers en switches. Implementatie van VLANs en routing protocols.</p>
+                                    <a href="" class="btn btn-primary">Meer info</a>
+                                </article>
+                            </li>
+                            <li class="col-md-6 mb-4">
+                                <article class="project-card">
+                                    <h3>Linux Server</h3>
+                                    <p>Setup en beheer van Linux servers met focus op security hardening en automation via bash scripts.</p>
+                                    <a href="" class="btn btn-primary">Meer info</a>
+                                </article>
+                            </li>
+                            <li class="col-md-6 mb-4">
+                                <article class="project-card">
+                                    <h3>Portfolio Site</h3>
+                                    <p>Deze responsive portfolio website gebouwd met HTML, CSS en Bootstrap 5. Focus op clean design.</p>
+                                    <a href="" class="btn btn-primary">Meer info</a>
+                                </article>
+                            </li>
+                        <li class="col-md-6 mb-4">
+                            <article class="project-card">
+                                <h3>Security Scripts</h3>
+                                <p>Python automation scripts voor security checks en vulnerability scanning op netwerk infrastructuur.</p>
+                                <a href="" class="btn btn-primary">Meer info</a>
+                            </article>
+                        </li>
+                        </ul>
                     </li>
-                    
-                    <li class="col-md-6">
-                        <article class="project-card border rounded p-4 h-100">
-                            <h2 class="text-uppercase fs-6 fw-bolder">Python Keylogger</h2>
-                            <p class="small">Educatief project om keylogging technieken te begrijpen. Ontwikkeld in Python voor security awareness training.</p>
-                            <a href="project-keylogger.html" class="btn btn-primary btn-sm" rel="noopener">Meer info</a>
-                        </article>
-                    </li>
-                    
-                    <li class="col-md-6">
-                        <article class="project-card border rounded p-4 h-100">
-                            <h2 class="text-uppercase fs-6 fw-bolder">Cisco Netwerk</h2>
-                            <p class="small">Complete netwerk infrastructuur met Cisco routers en switches. Implementatie van VLANs en routing protocols.</p>
-                            <a href="project-cisco.html" class="btn btn-primary btn-sm" rel="noopener">Meer info</a>
-                        </article>
-                    </li>
-                    
-                    <li class="col-md-6">
-                        <article class="project-card border rounded p-4 h-100">
-                            <h2 class="text-uppercase fs-6 fw-bolder">Linux Server</h2>
-                            <p class="small">Setup en beheer van Linux servers met focus op security hardening en automation via bash scripts.</p>
-                            <a href="project-linux.html" class="btn btn-primary btn-sm" rel="noopener">Meer info</a>
-                        </article>
-                    </li>
-                    
-                    <li class="col-md-6">
-                        <article class="project-card border rounded p-4 h-100">
-                            <h2 class="text-uppercase fs-6 fw-bolder">Portfolio Site</h2>
-                            <p class="small">Deze responsive portfolio website gebouwd met HTML, CSS en Bootstrap 5. Focus op clean design en gebruiksvriendelijkheid.</p>
-                            <a href="project-portfolio.html" class="btn btn-primary btn-sm" rel="noopener">Meer info</a>
-                        </article>
-                    </li>
-                    
-                    <li class="col-md-6">
-                        <article class="project-card border rounded p-4 h-100">
-                            <h2 class="text-uppercase fs-6 fw-bolder">Security Scripts</h2>
-                            <p class="small">Python automation scripts voor security checks en vulnerability scanning op netwerk infrastructuur.</p>
-                            <a href="project-scripts.html" class="btn btn-primary btn-sm" rel="noopener">Meer info</a>
-                        </article>
+                    <li class="col-lg-3 d-none d-lg-block">
+                        <aside class="sidebar-nav">
+                            <h3>Navigatie</h3>
+                            <ul class="list-unstyled">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="portofolio.html">Projects</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </aside>
                     </li>
                 </ul>
-            </li>
-
-            <li class="col-lg-3 mt-5 mt-lg-0">
-                <aside>
-                    <h2 class="text-uppercase fs-5 fw-bolder">Navigatie</h2>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html" class="text-decoration-none">Home</a></li>
-                        <li class="mb-2"><a href="portofolio.html" class="text-decoration-none">Projects</a></li>
-                        <li class="mb-2"><a href="contact.html" class="text-decoration-none">Contact</a></li>
-                    </ul>
-                    
-                    <h2 class="text-uppercase fs-5 fw-bolder mt-4">Contact</h2>
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <a href="https://www.linkedin.com/in/ayman-bouhallil-1199a9364/" target="_blank" rel="noopener" aria-label="LinkedIn">
-                                <i class="bi bi-linkedin fs-4"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://github.com/qamr04" target="_blank" rel="noopener" aria-label="GitHub">
-                                <i class="bi bi-github fs-4"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </aside>
-            </li>
-        </ul>
+            </article>
+        </section>
     </main>
 
-    <footer class="bg-light text-center py-3 mt-5">
-        <article class="container">
-            <p class="mb-2">&copy; 2025 Ayman Bouhallil</p>
-            <p class="mb-0">
-                <a href="https://www.linkedin.com/in/ayman-bouhallil-1199a9364/" target="_blank" rel="noopener" class="text-decoration-none me-3">LinkedIn</a>
-                <a href="https://github.com/qamr04" target="_blank" rel="noopener" class="text-decoration-none">GitHub</a>
-            </p>
-        </article>
+    <footer class="d-flex justify-content-between align-items-center">
+        <p class="m-0">&copy; 2025 Ayman Bouhallil</p>
+        <p class="m-0">
+            <a href="https://www.linkedin.com/in/ayman-bouhallil-1199a9364/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/qamr04" target="_blank">GitHub</a>
+        </p>
     </footer>
+
 </body>
 </html>
